@@ -1,0 +1,12 @@
+// Colors
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$darkGray: hsl(0, 0%, 55%);
+$veryDarkGray: hsl(0, 0%, 41%);
+
+
+// Font Sizes
+
+$font-body: 0.9375rem; // 15px
+$font-hero: 1.9375rem; // 31px
