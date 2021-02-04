@@ -1,0 +1,121 @@
+/* .parent2 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  height: 31.25rem;
+}
+
+.child {
+  grid-area: 1 / 1 / 2 / 2;
+  max-width: 69.6875rem;
+ 
+}
+
+.child2 {
+    align-self: end;
+    margin-left: 35.9375rem;
+    max-width: 25.9375rem;
+    max-height: 19.6875rem;
+    background:white;
+    align-items: center;
+}
+
+.main-image {
+    background-image: url(/images/desktop/image-interactive.jpg);
+    max-width: 47.5rem;
+    max-height: 31.25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main-header {
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 44px;
+    font-size: 37px;
+
+}
+
+.main-text {
+    text-align: left;
+    padding-left: 80px;
+    font-weight: 200;
+    margin-top: 50px;
+    font-weight: lighter;
+    line-height: 1.8;
+    font-size: 0.7rem;
+
+
+}
+
+.padding-top{
+    margin-top: 60px;
+} */
+
+.feature {
+    position: relative;
+    max-width: 1400px;
+    &__image {
+
+    background-image: url(/images/desktop/image-interactive.jpg);
+    min-height: 15.0625rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-top: 1.875rem;
+
+        @include breakpoint-up(medium) {
+            min-height: 500px;
+        }
+
+        
+        @include breakpoint-up(large) {
+            background-size: auto;
+            min-height: 500px;
+        }
+    }
+
+    &__main {
+    text-align: center;
+    padding: 13px;
+
+    @include breakpoint-up(medium) {
+        position: absolute;
+        background-color: white;
+        max-width: 350px;
+        right:0;
+        bottom: 0;
+        }
+
+        @include breakpoint-up(large) {
+            position: absolute;
+            background-color: white;
+            max-width: 540px;
+            left:50%;
+            bottom: 0;
+            height: 295px;
+            text-align: left;
+            padding-left: 58px;
+            }
+
+    }
+
+    &__header {
+        margin-top: 2.9375rem;
+        font-size: 1.75rem;
+        color: $black;
+
+        @include breakpoint-up(large) {
+            font-size: 3rem;
+            background-size: 70%;
+        }
+
+    }   
+
+    &__text {
+        padding: 5px;
+        color: $veryDarkGray;
+    }
+
+}
